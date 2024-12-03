@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car List</title>
+    <title>Programming Language</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,12 +27,12 @@
     </style>
 </head>
 <body>
-    <h1>Car List</h1>
-    {% for car in cars %}
-        <h3>{{ car.car_name}}</h3>
+    <h1>Programming Language</h1>
+    {% for prog in prog %}
+        <h3>{{ prog.name}}</h3>
     {% empty %}
-        <h3>Car's empty</h3>
+        <h3>Program's empty</h3>
     {% endfor%}
-    <a href="{% url 'cars:new' %}">Add New Car</a>
+    <a href="{% url 'programs:new' %}">Add New Language</a>
 </body>
 </html>
